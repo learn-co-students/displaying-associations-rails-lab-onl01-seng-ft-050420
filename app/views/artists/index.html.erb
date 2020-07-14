@@ -1,0 +1,9 @@
+<h1>Artist Index Page</h1>
+
+<% @artists.each do |a| %>
+    
+        <div><%= link_to a.name, artist_path(a) %> <%= a.song_count %> song </div>
+    
+<% end %>
+
+<%= link_to "New Artist", new_artist_path %>
