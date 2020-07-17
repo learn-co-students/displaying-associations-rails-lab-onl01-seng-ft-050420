@@ -21,14 +21,14 @@ describe 'artists', type: :feature do
     end
   end
 
-  #it 'index page lists the artists' do
-    #visit artists_path
-    #expect(page.status_code).to eq(200)
-    #expect(page).to have_content('Daft Punk')
-  #end
+  it 'index page lists the artists' do
+    visit artists_path
+    expect(page.status_code).to eq(200)
+    expect(page).to have_content('Daft Punk')
+  end
 
-  #it 'shows the song count for each artist' do
-    #visit artists_path
-    #expect(page).to have_content('2 song')
-  #end
+  it 'shows the song count for each artist' do
+    visit artists_path
+    expect(page).to have_content('2 song')
+  end
 end
